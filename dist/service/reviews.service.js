@@ -7,3 +7,4 @@ const AddReview = async (newReview) => {
         throw new Error(err);
     }
 };
+export default { AddReview };
