@@ -1,9 +1,7 @@
 import { Router } from "express";
-import { Request, Response } from "express";
+import reviewsController from "../controller/reviews.controller.js";
 const router = Router();
 
-router.post("/", async (req: Request, res: Response) => {
-  res.send(req.body);
-});
+router.post("/", reviewsController.addReview);
 
 export default router;

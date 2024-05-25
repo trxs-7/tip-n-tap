@@ -15,3 +15,5 @@ const AddReview = async (newReview: FEReviewInterface) => {
     throw new Error(err);
   }
 };
+
+export default { AddReview };
