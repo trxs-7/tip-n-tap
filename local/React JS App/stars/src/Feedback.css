@@ -1,0 +1,17 @@
+.feedbackSection {
+    color: purple;
+    text-align: center;
+}
+
+.feedbackBox {
+    width: 80%;
+    height: 10rem;
+    resize: none;
+    border-color: purple;
+}
+
+.submit {
+    background-color: purple;
+    color: white;
+    margin: 20px auto 50px;
+}
