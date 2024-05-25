@@ -1,5 +1,3 @@
-import { useState } from 'react'
-import { FaStar } from 'react-icons/fa'
 import './App.css'
 import Review from './Review.jsx'
 import NavBar from './NavBar.jsx'
@@ -9,7 +7,7 @@ import Feedback from './Feedback.jsx'
 function App() {
   
   return (
-    <div>
+    <div className='body'>
       <NavBar />
       <Tipping />
       <Review />

@@ -7,9 +7,9 @@ function Feedback() {
             <p>Help Us Brake the Issue</p>
             <textarea className="feedbackBox" placeholder="Type in your issue..."/>
             <div>
-                <button className="submit">Submit</button>
+                
+                <a href="http://localhost:3000/auth/google"><button className="submit">Submit</button></a>
             </div>
-            
         </div>
     )
 }

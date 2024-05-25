@@ -8,5 +8,5 @@ export const googleAuth = passport.authenticate("google", {
 export const googleAuthCallback = passport.authenticate("google");
 
 export const redirectToHome = (req: Request, res: Response) => {
-  res.redirect("http://localhost:3001");
+  res.redirect("http://localhost:5173");
 };
