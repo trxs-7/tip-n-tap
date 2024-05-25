@@ -7,10 +7,13 @@
 }
 
 .companyName {
-    font-size: 18px;
+    font-size: 35px;
 }
 
 .logo {
     font-weight: bold;
+    size: 20px;
+    height: 7em;
+    padding: 0.5em;
 }
 

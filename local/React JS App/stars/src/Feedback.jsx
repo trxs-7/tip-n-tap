@@ -5,7 +5,11 @@ function Feedback() {
         <div className="feedbackSection">
             <h1>WE LISTEN</h1>
             <p>Help Us Brake the Issue</p>
-            <input className="feedbackBox" type="text" placeholder="Type in your issue..."/>
+            <textarea className="feedbackBox" placeholder="Type in your issue..."/>
+            <div>
+                <button className="submit">Submit</button>
+            </div>
+            
         </div>
     )
 }

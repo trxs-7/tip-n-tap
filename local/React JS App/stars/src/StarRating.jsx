@@ -25,7 +25,6 @@ function StarRating() {
           </label>
         );
       })}
-      <p>Your rating is {rating}</p>
     </div>
     )
 }
