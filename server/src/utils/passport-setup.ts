@@ -1,41 +1,49 @@
 import passport from "passport";
-import { Strategy as GoogleStrategy, Profile } from "passport-google-oauth20";
-import userModel from "../model/users.model.js";
+import { Strategy, Profile } from "passport-google-oauth20";
+import usersService from "../service/users.service.js";
+import dotenv from "dotenv";
+dotenv.config();
+const config = {
+  CLIENT_ID: process.env.CLIENT_ID as string,
+  CLIENT_SECRET: process.env.CLIENT_SECRET as string,
+};
 
 passport.use(
-  new GoogleStrategy(
+  new Strategy(
     {
-      clientID: process.env.GOOGLE_CLIENT_ID || "",
-      clientSecret: process.env.GOOGLE_CLIENT_SECRET || "",
+      clientID: config.CLIENT_ID,
+      clientSecret: config.CLIENT_SECRET,
       callbackURL: "http://localhost:3000/auth/google/callback",
     },
-    async (accessToken, refreshToken, profile: Profile, done) => {
+    async (accessToken, refreshToken, profile, done) => {
       try {
-        let user = await userModel.findOne({ googleId: profile.id });
+        const user = await usersService.GetUser(profile.id);
         if (!user) {
-          user = await userModel.create({
+          const currentTime = new Date(Date.now());
+          await usersService.addUser({
             googleId: profile.id,
+            lastReview: new Date(0),
           });
+        } else {
+          if (await !usersService.canReviewAgain(profile.id)) {
+            throw new Error("You have left a review too recently!");
+          }
         }
-        done(null, user);
+
+        done(null, profile);
       } catch (error) {
         done(error);
       }
     }
   )
 );
-
-passport.serializeUser((user, done) => {
-  done(null, user);
+passport.serializeUser((user: any, done) => {
+  done(null, user.id);
 });
 
-passport.deserializeUser(async (id: string, done) => {
-  try {
-    const user = await userModel.findById(id);
-    done(null, user);
-  } catch (error) {
-    done(error);
-  }
+//read the session from the cookie
+passport.deserializeUser((obj: any, done) => {
+  done(null, obj);
 });
 
 export default passport;
