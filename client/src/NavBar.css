@@ -3,17 +3,17 @@
     color: white;
     display: flex;
     align-items: center;
-    padding: 10px 20px;
+    padding: 0px 20px;
 }
 
 .companyName {
-    font-size: 35px;
+    font-size: 18px;
 }
 
 .logo {
     font-weight: bold;
     size: 20px;
-    height: 7em;
+    height: 3em;
     padding: 0.5em;
 }
 
