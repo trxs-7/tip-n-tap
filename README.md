@@ -6,7 +6,11 @@ Our vision is to uplift bus drivers’ morale, reduce the existing bus driver sh
 In Singapore, the perception of bus drivers as unfriendly may stem from their low morale. Introducing a tipping system to allow commuters to express their appreciation could potentially enhance public transport experiences and help mitigate the bus driver shortage.
 The "Tip'n'Tap" app enables commuters to tip and rate their bus drivers immediately after their journey, focusing on aspects like friendliness, safety, and punctuality. We are testing this tipping system to see if it can alleviate the driver shortage and enhance the overall commuter experience.
 
+## Demo Video
+[Placeholder]
+
 ## Architecture Diagram 
+![Architecture Diagram](images/architecture_diagram.png)
 
 ## Features
 
