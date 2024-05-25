@@ -1,0 +1,19 @@
+.navbar {
+    background-color: purple;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.companyName {
+    font-size: 35px;
+}
+
+.logo {
+    font-weight: bold;
+    size: 20px;
+    height: 7em;
+    padding: 0.5em;
+}
+

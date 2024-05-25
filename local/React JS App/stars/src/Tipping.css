@@ -1,0 +1,27 @@
+section {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* set column sizes here */
+    grid-template-rows: auto auto; /* we want two rows */
+
+    grid-gap: 10px; /* how far between cells? */
+    grid-auto-flow: column; /* fill in by column, not row */
+
+    /* temporary property for visualization */
+    height: 150px;
+}
+
+.tippingSection {
+    text-align: center;
+}
+
+.title {
+    color: purple;
+}
+
+.description {
+    color: purple;
+}
+
+.buttonSection {
+    margin: 0px 20px 0px 20px
+}
