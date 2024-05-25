@@ -1,5 +1,4 @@
 import reviewsModel, { ReviewInterface } from "../model/reviews.model.js";
-
 interface FEReviewInterface {
   comments: string;
   tip: number;

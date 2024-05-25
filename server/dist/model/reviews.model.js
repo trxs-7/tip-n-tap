@@ -15,10 +15,5 @@ const ReviewSchema = new Schema({
         default: 0,
         required: true,
     },
-    user: {
-        type: String,
-        required: false,
-        default: "anonymous",
-    },
 });
 export default mongoose.model("reviews", ReviewSchema);

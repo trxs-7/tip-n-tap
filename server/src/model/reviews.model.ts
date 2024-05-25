@@ -1,11 +1,11 @@
 import mongoose, { Schema, Document } from "mongoose";
+import { UserInterface } from "./users.model.js";
 export interface ReviewInterface extends Document {
   comments: string;
   tip: number;
   stars: number;
   time: Date;
   busId: string;
-  user: string;
 }
 
 const ReviewSchema = new Schema<ReviewInterface>({
@@ -23,11 +23,6 @@ const ReviewSchema = new Schema<ReviewInterface>({
     type: Number,
     default: 0,
     required: true,
-  },
-  user: {
-    type: String,
-    required: false,
-    default: "anonymous",
   },
 });
 
