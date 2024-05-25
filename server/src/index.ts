@@ -3,10 +3,13 @@ import reviewsRouter from "./routes/reviews.route.js";
 import mongoose from "mongoose";
 import cors from "cors";
 import dotenv from "dotenv";
+import helmet from "helmet";
+
 dotenv.config();
 const app = express();
 const port = 3000;
 // Middleware
+app.use(helmet());
 app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
