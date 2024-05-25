@@ -6,7 +6,7 @@ export interface UserInterface extends Document {
 }
 
 const userSchema = new mongoose.Schema({
-  googleId: { type: String, required: true },
+  googleId: { type: String, required: true, unique: true },
   lastReview: { type: Date, required: true, default: new Date(0) },
 });
 
