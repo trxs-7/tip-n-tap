@@ -1,0 +1,9 @@
+.feedbackSection {
+    color: purple;
+    text-align: center;
+}
+
+.feedbackBox {
+    width: 400px;
+    height: 100px;
+}

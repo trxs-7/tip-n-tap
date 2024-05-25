@@ -1,0 +1,16 @@
+.navbar {
+    background-color: purple;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.companyName {
+    font-size: 18px;
+}
+
+.logo {
+    font-weight: bold;
+}
+
