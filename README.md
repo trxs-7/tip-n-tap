@@ -15,7 +15,7 @@ The "Tip'n'Tap" app enables commuters to tip and rate their bus drivers immediat
 
 ## Tech Stack
 This project is built using the MERN stack:
-- **MongoDB:** Document database used by the back end application to store data.
+- **MongoDB:** Document-oriented nosql database program used by the back end application to store data.
 - **Express.js:** Back end web application framework running on top of Node.js.
 - **React:** A JavaScript library for building user interfaces.
 - **Typescript/Node.js:** A JavaScript runtime built on Chrome's V8 JavaScript engine.
