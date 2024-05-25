@@ -25,6 +25,7 @@ const ReviewSchema = new Schema<ReviewInterface>({
     required: true,
   },
   user: {
+    type: String,
     required: false,
     default: "anonymous",
   },

@@ -16,6 +16,7 @@ const ReviewSchema = new Schema({
         required: true,
     },
     user: {
+        type: String,
         required: false,
         default: "anonymous",
     },
