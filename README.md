@@ -5,7 +5,7 @@
 Our vision is to uplift bus drivers' morale and enhance commuter experiences by leveraging positive interactions and financial incentives through a digital tipping app, "Tip'n'Tap." This app allows commuters in Singapore, where bus drivers are often perceived as unfriendly due to low morale, to tip and rate their drivers immediately after their journey, focusing on friendliness, safety, and punctuality. We aim to test whether this tipping system can mitigate the bus driver shortage and improve the overall public transport experience.
 
 ## Demo Video
-[Placeholder]
+[![Demo Video](https://img.youtube.com/vi/iPHAHwTgJU4/0.jpg)](https://www.youtube.com/watch?v=iPHAHwTgJU4)
 
 ## Architecture Diagram 
 ![Architecture Diagram](images/architecture_diagram.png)
@@ -31,18 +31,28 @@ To get a local copy up and running follow these simple steps:
    ```
    git clone https://github.com/your-username/your-project-name.git
    ```
-2. Install NPM packages
+2. Install NPM packages in client and server directories
    ```
    npm install
    ```
-3. Enter your configuration in `.env`
+3. Run client 
    ```
-   DATABASE_URL=your_database_url
+   npm run dev
    ```
-4. Run the application
+4. Open a new terminal, navigate to server directory & private information in `.env`
    ```
-   npm start
+   MONGO_URL=your_database_url
+   CLIENT_ID=get_from_google
+   CLIENT_SECRET=get_from_google
    ```
+5. Run server
+   ```
+   npm watch 
+   ```
+## Information Resources
+- [Pitch Video](https://youtu.be/iPHAHwTgJU4?si=AlP9dZqGiBnSkUzg)
+- [Pitch Deck](https://www.canva.com/design/DAGGOi0deI4/_oFEoa6lPSoAg5-06FjouQ/edit)
+- [Github repo](https://github.com/trxs-7/angel-hack-singapore)
 
 ## Contribution
 Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
