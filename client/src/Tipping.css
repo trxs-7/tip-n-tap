@@ -8,10 +8,14 @@ section {
 
     /* temporary property for visualization */
     height: 150px;
+
 }
 
 .tippingSection {
+    display: flex;
     text-align: center;
+    align-items: center;
+        flex-direction: column;
 }
 
 .title {
@@ -25,13 +29,21 @@ section {
 }
 
 .buttonSection {
-    margin: 20px 20px 0px 20px
-    }
+display: flex;
+    align-self: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 10px 31px;
+    gap: 12px 4vw;
+    width: 70vw;
+    height: fit-content;
+}
+
+.tipButton {
     
-    .tipButton {
-        background-color: white;
+    background-color: white;
         color: #FF8000;
         font-size: 1.8rem;
         border: 1px solid #FF8000;
-        width: 200px;
+    width: 33vw;
 }
