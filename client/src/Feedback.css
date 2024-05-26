@@ -8,10 +8,12 @@
     height: 10rem;
     resize: none;
     border-color: purple;
+    background-color: white;
+        color: #FF8000;
 }
 
 .submit {
     background-color: purple;
-    color: white;
+    
     margin: 20px auto 50px;
 }

@@ -3,17 +3,29 @@
     color: white;
     display: flex;
     align-items: center;
-    padding: 10px 20px;
+    width: 100vw;
 }
 
 .companyName {
-    font-size: 35px;
-}
+    font-size: 32px;
+    }
+    
+    .logo {
+        font-weight: bold;
+        size: 40px;
+        height: 40px;
+    }
+    
+    @media screen and (max-width: 768px) {
+        .companyName {
+            font-size: 14px;
+        }
 
-.logo {
-    font-weight: bold;
-    size: 20px;
-    height: 7em;
-    padding: 0.5em;
+        .logo {
+            font-weight: bold;
+            size: 20px;
+    height: 20px;
+        padding: 5px;
+    }
 }
 
