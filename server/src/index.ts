@@ -15,7 +15,9 @@ mongoose
   .then(() => console.log("Connected to MongoDB Typescript"))
   .catch((err) => console.error("Error connecting to MongoDB:", err));
 
-
+app.get("/", (req, res) => {
+  res.send("home page");
+});
 app.listen(port, () => {
   console.log(`Server is running at http://localhost:${port}`);
 });
