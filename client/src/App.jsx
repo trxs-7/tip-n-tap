@@ -5,7 +5,6 @@ import Tipping from './Tipping.jsx'
 import Feedback from './Feedback.jsx'
 
 function App() {
-  
   return (
     <div className='body'>
       <NavBar />
